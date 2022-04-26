@@ -1,15 +1,10 @@
-var userOne = {
-  email: 'ryu@ninjas.com',
-  name: 'Ryu',
-  login(){
-    console.log(this.email, "has logged in");
-  },
-  logout(){
-    console.log(this.email, "has logged out")
+class User {
+  constructor(name, email){
+    this.name = name;
+    this.email = email;
   }
-  
-};
 
+}
 
-userOne.name = "Yoshi";
-userOne['name'] = "Ryu";
+var userOne = new User('Ryu', 'ryu@gmail.com');
+console.log(userOne)

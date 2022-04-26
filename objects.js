@@ -4,7 +4,15 @@ class User {
     this.email = email;
   }
 
+  login(){
+    console.log(this.name, 'just logged in');
+  }
+  logout(){
+    console.log(this.name, 'just logged out');
+  }
+
 }
 
 var userOne = new User('Ryu', 'ryu@gmail.com');
-console.log(userOne)
+
+userOne.login()
